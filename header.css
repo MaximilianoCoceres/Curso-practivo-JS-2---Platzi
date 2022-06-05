@@ -50,7 +50,6 @@
 
 .contactos img{
     width: 1.5em;
-    color: #fff;
     padding: 0 0.6em 0.6em 0 ;
     filter: invert(1);
 }
@@ -78,7 +77,6 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        color: #fff;
         font-family: 'Kanit', sans-serif;
         font-weight: 100;
 
