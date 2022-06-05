@@ -1,0 +1,131 @@
+body{
+    background-color: rgb(205, 205, 205);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: normal;
+    
+}
+
+.titulo h1{
+    font-size: 2em;
+    
+}
+
+.titulo p{
+    font-size: 1.5em;
+    font-weight:100; 
+    margin: 0.5em;
+}
+
+.calculadora{
+    border: 1px dotted white;
+    border-radius: 0.2em;
+    margin: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    font-size: 1.5em;
+    font-family: 'Kanit', sans-serif;
+    background-color: rgb(168, 168, 168);
+    color: white;
+    text-align: center;
+
+}
+
+.calculadora form{
+    border-radius: 0.2em;
+    padding:1em;
+    margin-top: 2em;
+    position: relative;
+    height: 14em;
+    max-height: 16em;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.calculadora form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.calculadora form div input{
+    outline: none;
+    border-radius: 0.5em;
+    border: 0;
+    height: 2em;
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: rgb(233, 233, 221);
+    text-align: center;
+    
+}
+
+
+.calculadora form div input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+
+.boton button{
+    border-radius: 0.5em;
+    padding: 0.2em;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    width: 10em;
+    background-color: white;
+    color: black;
+}
+
+.boton button:hover{
+    background-color: rgb(4, 86, 109);
+    color: white;
+    transition: 1s;
+}
+
+.resultado{
+    margin-top: 2em;
+}
+
+
+@media (max-width:768px){
+    h2{
+        font-size: 1.2em;
+    }
+
+    .calculadora form{
+
+        margin-top: 1em;
+        height: 100%;
+    }
+
+    .resultado{
+        margin-top: 1em;
+    }
+
+
+}
